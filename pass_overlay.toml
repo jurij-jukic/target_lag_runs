@@ -1,0 +1,8 @@
+[[orchestrator.train.source]]
+name = "reverse-text"
+env.taskset.id = "reverse-text"
+env.agent.harness.id = "null"
+env.agent.runtime.type = "subprocess"
+curriculum.gates.low_signal.type = "advantage_range"
+curriculum.gates.low_signal.reject_min = -0.25
+curriculum.gates.low_signal.reject_max = 0.25
